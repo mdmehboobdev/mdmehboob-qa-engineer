@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "Job Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Hero Description", name: "description", widget: "text" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone / WhatsApp number", name: "phone", widget: "string" }
+          - { label: "WhatsApp Link", name: "whatsapp", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Tech chips"
+                name: "chips"
+                widget: "list"
+                field: { label: "Tool", name: "chip", widget: "string" }
+          - label: "Tools"
+            name: "tools"
+            widget: "list"
+            field: { label: "Tool name", name: "tool", widget: "string" }

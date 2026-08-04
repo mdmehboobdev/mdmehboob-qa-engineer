@@ -1,0 +1,101 @@
+{
+  "name": "Muhammad Mehboob",
+  "title": "QA Engineer",
+  "tagline": "Quality Focused. Detail Oriented. Always Improving.",
+  "headline": "QA Engineer. Bug Hunter. SaaS Specialist.",
+  "description": "2+ years breaking SaaS apps — 500+ test cases, 100+ bugs reported with 95% acceptance rate, 12 critical production bugs caught. Playwright automation cut regression time by 40%.",
+  "location": "Lahore, Pakistan",
+  "availability": "Open to Remote",
+  "email": "mdmehboobqaengineer@gmail.com",
+  "phone": "+923355976655",
+  "whatsapp": "https://wa.me/923355976655",
+  "linkedin": "https://www.linkedin.com/in/muhammad-mehboob-4b7a33420",
+  "github": "https://github.com/mdmehboobqaengineer/mdmehboob-qa-engineer",
+  "cv": "/assets/Muhammad_Mehboob_QA_Resume.pdf",
+  "stats": [
+    { "number": "2+", "label": "Years Experience" },
+    { "number": "500+", "label": "Test Cases Written" },
+    { "number": "100+", "label": "Bugs Reported" },
+    { "number": "95%", "label": "Bug Acceptance Rate" },
+    { "number": "40%", "label": "Regression Time Saved" }
+  ],
+  "pills": [
+    "Bug Reporting", "API Testing (Postman)", "Playwright",
+    "SDLC · STLC", "Agile / Scrum", "REST API"
+  ],
+  "services": [
+    {
+      "number": "01",
+      "icon": "🔍",
+      "title": "Manual Testing",
+      "description": "Functional, regression, smoke & edge case testing for web apps",
+      "slug": "manual-testing"
+    },
+    {
+      "number": "02",
+      "icon": "🤖",
+      "title": "Playwright Automation",
+      "description": "Regression suites — 40% time reduction proven",
+      "slug": "automation-testing"
+    },
+    {
+      "number": "03",
+      "icon": "🔌",
+      "title": "API Testing",
+      "description": "REST endpoints, auth, CRUD & data integrity via Postman",
+      "slug": "api-testing"
+    },
+    {
+      "number": "04",
+      "icon": "📋",
+      "title": "Test Planning",
+      "description": "Strategy, test cases & traceability matrices",
+      "slug": "test-planning"
+    },
+    {
+      "number": "05",
+      "icon": "🐛",
+      "title": "Bug Reporting",
+      "description": "Jira reports — 95% dev acceptance rate",
+      "slug": "bug-reporting"
+    }
+  ],
+  "projects": [
+    {
+      "tag": "AUTOMATION",
+      "title": "SaaS Checkout Automation",
+      "description": "Playwright suite covering 40+ edge cases in a payment flow. Caught a critical race condition pre go-live. Regression time cut by 40%.",
+      "chips": ["Playwright", "Jira", "Git"]
+    },
+    {
+      "tag": "API TESTING",
+      "title": "REST API Validation Suite",
+      "description": "120+ endpoint tests on a B2B SaaS — auth flows, CRUD ops, status codes, and data integrity via Postman collections.",
+      "chips": ["Postman", "REST API", "Auth"]
+    },
+    {
+      "tag": "WEB APP QA",
+      "title": "B2B Dashboard Regression",
+      "description": "Manual + automated regression for an analytics dashboard. 12 critical bugs caught. Zero critical defect escape to production.",
+      "chips": ["Playwright", "Manual", "Jira"]
+    }
+  ],
+  "cvStats": [
+    { "number": "500+", "label": "Manual test cases designed & executed" },
+    { "number": "100+", "label": "Bugs reported in Jira with 95% acceptance" },
+    { "number": "12", "label": "Critical production-blocking bugs caught" },
+    { "number": "40%", "label": "Regression time reduced via Playwright" }
+  ],
+  "tools": [
+    "Playwright", "Postman", "Jira", "Git · GitHub",
+    "SDLC · STLC", "Agile", "REST API", "Python",
+    "JavaScript", "SQL", "Excel · Sheets"
+  ],
+  "themes": [
+    { "id": "navy", "label": "Navy Blue", "class": "sw-navy" },
+    { "id": "purple", "label": "Purple", "class": "sw-purple" },
+    { "id": "emerald", "label": "Emerald", "class": "sw-emerald" },
+    { "id": "crimson", "label": "Crimson", "class": "sw-crimson" },
+    { "id": "gold", "label": "Gold", "class": "sw-gold" }
+  ]
+}

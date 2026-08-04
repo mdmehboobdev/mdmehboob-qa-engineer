@@ -1,0 +1,72 @@
+---
+layout: base.njk
+---
+<article>
+  <!-- SERVICE HERO -->
+  <section class="hero" style="padding:52px 48px 44px">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div style="max-width:680px;position:relative;z-index:1">
+      <div class="eyebrow" style="margin-bottom:16px">
+        <a href="/" class="eyebrow-line" style="display:block;width:26px;height:1.5px;background:var(--grad)"></a>
+        <span class="eyebrow-text"><a href="/#services" style="color:var(--accent2);text-decoration:none">Services</a> / {{ title }}</span>
+      </div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:var(--text);margin-bottom:16px">
+        {{ icon }} <em style="font-style:normal;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">{{ title }}</em>
+      </h1>
+      <p style="font-size:15px;color:var(--text-dim);line-height:1.8;max-width:540px;margin-bottom:28px">{{ description }}</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn-primary" href="/#contact" style="background:var(--grad);color:#fff;padding:11px 24px;border-radius:6px;font-size:12px;font-weight:600">Get started →</a>
+        <a class="btn-whatsapp" href="{{ site.whatsapp }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:7px;background:rgba(37,211,102,0.08);border:0.5px solid rgba(37,211,102,0.25);color:#25D166;padding:11px 17px;border-radius:6px;font-size:12px;font-weight:600">💬 WhatsApp me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <div style="border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:52px 48px;background:var(--bg3)">
+    <div style="max-width:1100px;margin:0 auto">
+      <div class="eyebrow" style="margin-bottom:14px">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="eyebrow-text">What's included</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700;letter-spacing:-1px;color:var(--text);margin-bottom:28px">{{ subtitle }}</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
+        {% for item in includes %}
+        <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:8px;padding:20px">
+          <div style="font-size:20px;margin-bottom:10px">{{ item.icon }}</div>
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">{{ item.title }}</p>
+          <p style="font-size:11px;color:var(--text-dim);line-height:1.7">{{ item.desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLS USED -->
+  <div style="padding:52px 48px;border-bottom:0.5px solid var(--border)">
+    <div style="max-width:1100px;margin:0 auto">
+      <div class="eyebrow" style="margin-bottom:14px">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="eyebrow-text">Tools I use</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+        {% for tool in tools %}
+        <span class="cv-tool">{{ tool }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="padding:52px 48px;text-align:center;background:var(--bg2)">
+    <div class="eyebrow" style="margin-bottom:14px;justify-content:center">
+      <span class="eyebrow-line" aria-hidden="true"></span>
+      <span class="eyebrow-text">Ready?</span>
+    </div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;letter-spacing:-1px;color:var(--text);margin-bottom:10px">{{ cta_heading }}</h2>
+    <p style="font-size:13px;color:var(--text-dim);max-width:420px;margin:0 auto 28px;line-height:1.8">{{ cta_text }}</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn-primary" href="/#contact" style="background:var(--grad);color:#fff;padding:12px 26px;border-radius:6px;font-size:13px;font-weight:600">Contact me →</a>
+      <a href="/#services" style="color:var(--text-dim);font-size:13px;padding:12px 20px;border:0.5px solid var(--border);border-radius:6px">← All services</a>
+    </div>
+  </div>
+</article>
